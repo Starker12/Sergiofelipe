@@ -1,0 +1,213 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos para el video */
+video {
+    width: 100%;
+}
+
+/* Estilos para el texto sobre el video */
+.absolute {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5vw; /* Usamos unidades vw para tamaño de fuente */
+    font-weight: 900;
+    z-index: 100;
+    color: #fff;
+    margin-bottom: 2vw; /* Usamos unidades vw para márgenes */
+}
+
+h1::after {
+    display: block;
+    width: 30%;
+    height: 1vw; /* Usamos unidades vw para el tamaño de la línea */
+    content: "";
+    margin: auto;
+    background: #fff;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.575);
+}
+
+
+
+/* Estilos para el cuadro de bienvenida */
+.welcome-box {
+    background-color: #b98800af;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.welcome-box h2 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.welcome-box p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.welcome-header {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Resto de tus estilos ... */
+
+/* Estilos para el video contenedor */
+.video-container {
+    position: relative;
+}
+
+/* Estilos para el logo */
+.logo {
+    position: absolute;
+    top: 9%; /* Ajusta la distancia desde arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30vw; /* Usamos unidades vw para tamaño del logo */
+    z-index: 1;
+}
+
+/* Estilos para el video */
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el texto sobre el video */
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2vw; /* Usamos unidades vw para tamaño de fuente */
+    background-color: transparent;
+    padding: 1vw; /* Usamos unidades vw para el padding */
+    border-radius: 1vw; /* Usamos unidades vw para el radio de borde */
+    z-index: 2;
+}
+
+/* Estilos para oscurecer el video */
+.video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para la transición al hacer scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para el botón */
+.scroll-button {
+    display: inline-block;
+    padding: 1vw 2vw; /* Usamos unidades vw para el padding */
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 1vw; /* Usamos unidades vw para el radio de borde */
+    margin-top: 2vw; /* Usamos unidades vw para el margen superior */
+}
+/* ... Tus estilos existentes ... */
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories, .social-media {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.categories h2, .social-media h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para diferentes tamaños de pantalla */
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 8vw; /* Ajustamos el tamaño de fuente */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 10vw; /* Ajustamos el tamaño de fuente */
+        margin-bottom: 0;
+    }
+
+    h1::after {
+        display: none;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+    <script>
+        // Espera a que se cargue el contenido del documento
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtén el elemento del enlace
+            var enlaceServicios = document.getElementById("ver-servicios");
+    
+            // Agrega un escucha para el evento click
+            enlaceServicios.addEventListener("click", function (event) {
+                // Previene el comportamiento predeterminado del enlace
+                event.preventDefault();
+    
+                // Agrega una clase para activar la transición
+                enlaceServicios.classList.add("transition-out");
+    
+                // Espera un corto período antes de redirigir a la página de servicios
+                setTimeout(function () {
+                    window.location.href = enlaceServicios.getAttribute("href");
+                }, 300); // Cambia el valor si deseas ajustar el tiempo de transición
+            });
+        });
+        
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap" rel="stylesheet">
+    <!DOCTYPE html>
+    <!DOCTYPE html>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Mi Primera Página Web</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="video (1080p).mp4" type="video/mp4">
+                </video>
+                <div class="video-text">
+                    <h1>Bienvenido a Sn Muebles</h1>
+                    <a href="#siguiente-columna" class="scroll-button">Conócenos</a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="siguiente-columna" id="siguiente-columna" style="scroll-margin-top: 200px;">
+            <!-- Contenido de la siguiente columna -->
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="categories">
+                    <!-- Categorías... -->
+                </div>
+                <div class="social-media">
+                    <!-- Enlaces a redes sociales... -->
+                </div>
+            </div>
+        </footer>
+   <!DOCTYPE html>
+   <html lang="es">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Nuestra Web - Inicio</title>
+       <style>
+           /* Estilos de ejemplo para la página de inicio */
+           body {
+               font-family: Arial, sans-serif;
+               margin: 0;
+               padding: 0;
+               background-color: #f0f0f0; /* Fondo gris más claro */
+               color: #000000; /* Color de texto gris oscuro */
+           }
+   
+           .container {
+               max-width: 800px;
+               margin: 0 auto;
+               padding: 40px;
+               display: flex;
+               flex-wrap: wrap;
+           }
+   
+           .first-column {
+            width:250%; /* Ancho al 50% de la página */
+            background-color: #252525; /* Fondo gris claro */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 60px;
+           }  
+
+           .logo {
+               max-width: 150px;
+               height: auto;
+               margin-right: 20px;
+           }
+   
+           .welcome-content {
+               text-align: center;
+           }
+   
+           .welcome-title {
+               font-size: 30px;
+               font-weight: bold;
+               margin-bottom: 20px;
+               color: #fafbfd; /* Color de título más oscuro */
+           }
+   
+           .description {
+               font-size: 18px;
+               margin-bottom: 30px;
+               color: #fafbfd; /* Color de descripción más claro */
+           }
+   
+           .btn {
+               background-color: #e64400; /* Botón gris medio */
+               color: white;
+               padding: 10px 20px;
+               border: none;
+               border-radius: 5px;
+               font-size: 16px;
+               text-decoration: none;
+           }
+       </style>
+   </head>
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página Web de Muebles</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="video-container">
+            <!-- Contenido del video y logo... -->
+        </div>
+    </header>
+
+    <section class="welcome-box">
+        <div class="welcome-content">
+            <h1 class="welcome-header">Bienvenido a nuestra empresa</h1>
+            <p>Estamos comprometidos en brindar servicios de alta calidad que transformarán su hogar en un espacio único y acogedor.</p>
+            <p>Explora nuestra amplia gama de opciones y encuentra los muebles perfectos para hacer de tu casa un lugar verdaderamente especial.</p>
+            <a href="servicios.html" class="scroll-button">Ver Categorías</a>
+        </div>
+    </section>
+
+    <!-- Contenido principal de la página -->
+
+    <footer>
+        <div class="footer-content">
+            <!-- Contenido del pie de página... -->
+        </div>
+    </footer>
+</body>
+</html>
+
+    
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa XYZ - Página de Inicio</title>
+    <style>
+        /* Estilos para la sección Hero */
+        #hero {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        #hero h1 {
+            font-size: 100px;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        /* Estilos para la llamada a la acción */
+        #hero .btn {
+            background-color: #ff5500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #hero .btn:hover {
+            background-color: #e64400;
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Web - Diseño Web</title>
+    <style>
+        /* Estilos de ejemplo para la sección de dos columnas */
+        .two-column-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .column {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .column img {
+            max-width: 50%;
+            height: auto;
+        margin-left: 200px; /* Mueve la imagen a la derecha */
+            margin-right: 200px; /* Agrega un espacio entre la imagen y el texto */
+            transition: transform 0.3s ease-in-out;
+            }
+            .column img:hover {
+            transform: scale(1.1); /* Agranda la imagen en un 10% */
+        }
+        .column h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .column p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .column a {
+            background-color: #ff5500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .column a:hover {
+            background-color: #e64400;
+        }
+    </style>
+</head>
+<body>
+    <section class="two-column-section">
+        <div class="column">
+            <div class="image-container">
+                <img src="logo2-ePnjvbRnY-transformed-removebg-preview.png" alt="Imagen de Diseño Web">
+            </div>
+        </div>
+        <div class="column">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos un servicio especializado en la construcción de proyectos de decoración interior.                                                            
+            <p>Fabricación de muebles a medidas, gran variedad de diseños, exclusividad, amplia gama de maderas trabajadas, venta de insumo.</p>
+            <p>SN MUEBLES deriva de las primeras letras del nombre de su fundador. Don SERGIO NORAMBUENA.<p>
+            </p>Desde muy joven Don Sergio Norambuena inició su vocación de trabajo de maestro mueblista. Años más tarde creo su empresa, logrando ser un reconocido mueblista y desarrollador de proyectos.</p>
+        </p>Gracias al esfuerzo de nuestros trabajadores y la visión de nuestro fundador hemos logrado llegar a ser una de las principales empresas de muebles de la región.</p>
+            <a href="servicios.html" class="btn" id="ver-servicios">Ver Nuestros Servicios</a>
+        </div>
+    </section>
+    <!-- Resto del contenido de la página -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="categories">
+                <h2>Categorías</h2>
+                <ul>
+                    <li><a href="#">Cocina</a></li>
+                    <li><a href="#">Baños</a></li>
+                    <li><a href="#">Dormitorios</a></li>
+                    <li><a href="#">Living</a></li>
+                    <!-- Agrega más categorías según sea necesario -->
+                </ul>
+            </div>
+            <div class="social-media">
+                <h2>Redes Sociales</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/SnMueblesCoquimbo">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/sn.muebles/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>

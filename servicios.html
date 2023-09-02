@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi Página Web de Muebles</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <style>
+        /* Estilos de ejemplo para la página de servicios */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ff5500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .back-btn:hover {
+            background-color: #000000;
+        }
+
+        .search-bar {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .search-input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .column {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .column img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .service-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn {
+            background-color: #ff5500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <a href="/index.html" class="back-btn">Volver a la Página Principal</a>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Buscar" id="searchInput">
+            <div class="filter">
+                <h2>Filtrar</h2>
+                <form>
+                    <label for="material">Material:</label>
+                    <select id="material" name="material">
+                        <option value="madera">Madera</option>
+                        <option value="cuarzo">Cuarzo</option>
+                    </select>
+                    
+                    <label for="estilo">Estilo:</label>
+                    <select id="estilo" name="estilo">
+                        <option value="rustico">Rustico</option>
+                        <option value="moderno">Moderno</option>
+                    </select>
+                    
+                    <input type="submit" value="Filtrar">
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <img src="escritorio.jpg" alt="Imagen del Servicio 1">
+            <div class="service-name">Escritorio Presidencial</div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+        <div class="column">
+            <img src="oficina.jpg" alt="Imagen del Servicio 2">
+            <div class="service-name">Oficina Moderna</div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+        <div class="column">
+            <img src="meson.jpg" alt="Imagen del Servicio 3">
+            <div class="service-name">Mesón de Atención</div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+        <div class="column">
+            <img src="escritorio.jpg" alt="Imagen del Servicio 1">
+            <div class="service-name">Escritorio Presidencial</div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+        <div class="column">
+            <img src="oficina.jpg" alt="Imagen del Servicio 2">
+            <div class="service-name">Oficina Moderna</div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+        <div class="column">
+            <img src="meson.jpg" alt="Imagen del Servicio 3">
+            <div class="service-name">Mesón de Atención</div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+        <div class="column">
+            <img src="escritorio.jpg" alt="Imagen del Servicio 1">
+            <div class="service-name">Escritorio Presidencial</div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+        <div class="column">
+            <img src="oficina.jpg" alt="Imagen del Servicio 2">
+            <div class="service-name">Oficina Moderna</div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+        <div class="column">
+            <img src="meson.jpg" alt="Imagen del Servicio 3">
+            <div class="service-name">Mesón de Atención</div>
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+        <!-- Agrega más columnas de servicios según sea necesario -->
+    </div>
+
+    <script>
+        const searchInput = document.getElementById("searchInput");
+        const columns = document.querySelectorAll(".column");
+
+        searchInput.addEventListener("input", function () {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            columns.forEach(column => {
+                const serviceName = column.querySelector(".service-name").textContent.toLowerCase();
+
+                if (serviceName.includes(searchTerm)) {
+                    column.style.display = "block";
+                } else {
+                    column.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</div>
+
+<a href="Terminos y condiciones.HTML" class="btn-terms">Términos y Condiciones</a>
